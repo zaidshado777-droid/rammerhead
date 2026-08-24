@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 module.exports = {
     bindingAddress: '0.0.0.0',
-    port: process.env.PORT || 8080,
+    port: 8008,
     crossPort: 8081,
     ssl: {
         enabled: false,

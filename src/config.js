@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-
 module.exports = {
     bindingAddress: '0.0.0.0',
     port: process.env.PORT || 8080,
@@ -21,6 +20,7 @@ module.exports = {
         maxAge: 86400000,
         path: './cache'
     },
+    stripClientHeaders: [],
     generatePrefix: (type) => {
         const time = new Date().toISOString();
         return `(${process.pid}) [${time}] [${type.toUpperCase()}] `;

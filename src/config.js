@@ -22,7 +22,7 @@ module.exports = {
     },
     stripClientHeaders: [],
     getServerInfo: () => ({
-        hostname: 'rammerhead-production-4f32.up.railway.app',
+        hostname: 'variabledash.up.railway.app',
         port: 443,
         crossDomainPort: 8081,
         protocol: 'https:'

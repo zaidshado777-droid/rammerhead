@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 module.exports = {
     bindingAddress: '0.0.0.0',
-    port: process.env.PORT || 8080,
+    port: process.env.PORT || 8008,
     crossPort: 8081,
     ssl: {
         enabled: false,
@@ -12,7 +12,7 @@ module.exports = {
     crossServerKey: 'shh-its-a-secret',
     password: '',
     workers: 1,
-    reverseProxy: false,
+    reverseProxy: true,
     publicLogs: true,
     loggingLevel: 'info',
     diskCache: {

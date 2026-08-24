@@ -21,6 +21,12 @@ module.exports = {
         path: './cache'
     },
     stripClientHeaders: [],
+    getServerInfo: () => ({
+        hostname: 'rammerhead-production-4f32.up.railway.app',
+        port: 443,
+        crossDomainPort: 8081,
+        protocol: 'https:'
+    }),
     generatePrefix: (type) => {
         const time = new Date().toISOString();
         return `(${process.pid}) [${time}] [${type.toUpperCase()}] `;
